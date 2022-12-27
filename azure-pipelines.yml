@@ -1,4 +1,10 @@
 trigger:
+- task: PowerBIActions@5
+  inputs:
+    PowerBIServiceEndpoint: 'PBI Service'
+    Action: 'Publish'
+    WorkspaceName: 'Covid19'
+    PowerBIPath: 'https://github.com/madinabi/Covid19Reporting/blob/main/Covid19ReportingOriginal.pbix'
 - main
 
 pool:
